@@ -1,0 +1,38 @@
+
+.navli{
+    display: inline-block;
+    margin-right:200px ;
+    margin-left: 125px;
+   font-size: 25px;
+    font-family: fantasy;
+    font-size:bold ;
+    border: 1px solid;
+    padding:1px;
+    
+    
+}
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ h6{
+        font-size: 20px;
+}
+
+
+.header-img{
+    background-image :url(https://sweetgirlcookies.com/wp-content/uploads/2017/09/Sweet-Girl-Cookie-Header.jpg);
+    width: 100%; 
+    height: 220px;
+    background-size: cover;
+    border-radius: 8px;
+  padding:1px;
+  margin: auto;
+  border: 1px solid blueviolet;
+}
+
+body{
+    background-color: cyan;
+}
