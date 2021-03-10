@@ -113,29 +113,29 @@ footer();
 
 
 
+//forms and event part 
+let submitData = document.getElementById('userInput');
 
-// let submitData = document.getElementById('userInput');
+submitData.addEventListener('submit',userInput);
 
-// submitData.addEventListener('submit',userInput);
-
-// function userInput(event){
-//   event.preventDefault();
-//   let storeName=event.target.userLocation.value;
-//   let maxHoursCustomers=parseInt(event.target.MaxHourely.value);
-//   let minHoursCustomers=parseInt(event.target.MinHourely.value);
-//   let avgCookiesByCustomers=parseInt(event.target.AvgCookie.value);
-
-
+function userInput(event){
+  event.preventDefault();
+  let storeName=event.target.userLocation.value;
+  let maxHoursCustomers=parseInt(event.target.MaxHourely.value);
+  let minHoursCustomers=parseInt(event.target.MinHourely.value);
+  let avgCookiesByCustomers=parseInt(event.target.AvgCookie.value);
 
 
 
-//   let newStore = new Stores (storeName,maxHoursCustomers,minHoursCustomers,avgCookiesByCustomers);
-//   table.deleteRow(table.rows.length - 1);
 
-//   newStore.content();
-//   footer();
 
-// }
+  let newStore = new Stores (storeName,maxHoursCustomers,minHoursCustomers,avgCookiesByCustomers);
+  table.deleteRow(table.rows.length - 1); //to remove last row 
+
+  newStore.content();
+  footer();//to restore the removed row at last.
+}
+
 
 
 
