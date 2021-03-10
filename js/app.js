@@ -11,7 +11,7 @@ function header (){
   table.appendChild(tableRow);
   let tableData1=document.createElement('td');
   tableRow.appendChild(tableData1);
-  tableData1.textContent= ' ';
+  tableData1.textContent= ' '; // for empty cell
   for (let index = 0; index < hours.length; index++) {
     let tableData=document.createElement('td');
     tableRow.appendChild(tableData);
@@ -19,7 +19,7 @@ function header (){
 
   }
   let tableData2=document.createElement('td');
-  tableRow.appendChild(tableData2);
+  tableRow.appendChild(tableData2); // for daily location Total cell.
   tableData2.textContent= 'Daily Location Total';
 }
 header();
@@ -38,6 +38,7 @@ Stores.prototype.content=function(){
   let tableData=document.createElement('td');
   tableRow.appendChild(tableData);
   tableData.textContent= this.sum;
+
 
 };
 
@@ -75,6 +76,95 @@ new Stores('Lima', '16','2','4.6');
 for(let i=0; i< branches.length;i++){
   branches[i].content();
 }
+
+
+
+
+
+// footer row
+
+function footer(){
+  let tableRow=document.createElement('tr');
+  table.appendChild(tableRow);
+  let totalCell=document.createElement('td');
+  tableRow.appendChild(totalCell);
+  totalCell.textContent='Total';
+  let hourlyTotal;
+  let totalOfTotal=0;
+  for (let i=0 ; i<hours.length;i++){
+    hourlyTotal=0;
+    for (let j=0; j<branches.length; j++){
+      hourlyTotal+=branches[j].data[i];
+    }
+
+    let hourlyTd=document.createElement('td');
+    tableRow.appendChild(hourlyTd);
+    hourlyTd.textContent=(hourlyTotal);
+    totalOfTotal+=hourlyTotal;
+
+  }
+  let finalTotal=document.createElement('td');
+  tableRow.appendChild(finalTotal);
+  finalTotal.textContent=totalOfTotal;
+}
+
+
+footer();
+
+
+
+
+// let submitData = document.getElementById('userInput');
+
+// submitData.addEventListener('submit',userInput);
+
+// function userInput(event){
+//   event.preventDefault();
+//   let storeName=event.target.userLocation.value;
+//   let maxHoursCustomers=parseInt(event.target.MaxHourely.value);
+//   let minHoursCustomers=parseInt(event.target.MinHourely.value);
+//   let avgCookiesByCustomers=parseInt(event.target.AvgCookie.value);
+
+
+
+
+
+//   let newStore = new Stores (storeName,maxHoursCustomers,minHoursCustomers,avgCookiesByCustomers);
+//   table.deleteRow(table.rows.length - 1);
+
+//   newStore.content();
+//   footer();
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let places=['seattle','Tokyo','Dubai','Paris','Lima'];
+
+
+
+
+
+
 
 
 
