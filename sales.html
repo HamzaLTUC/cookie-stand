@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-    <h2 id='Seattle'> </h2>
+        <form id = "userInput">
+            <fieldset>
+<label for="Location"> Store Name: </label>
+<input required type="text" name="userLocation" placeholder=" Enter store Name">
+</fieldset>
+<fieldset>
+
+<label for="maxHoursCustomers"> Max Hourely Customers: </label>
+<input required type="text" name="MaxHourely" placeholder="Enter Your Max Hourely Customers">
+<label for="minHoursCustomers"> Min Hourely Customers: </label>
+<input type="text" name="MinHourely" placeholder="Enter Your Min Hourely Customers">
+</fieldset>
+<fieldset>
+<label for="AvgHoursCustomers"> Avg Cookie By Customers:</label>
+<input required type="text" name="AvgCookie" placeholder="Enter Your Avg Cookie By Customer">
+<input type="submit" value="Submit ">
+</fieldset>
+
+        </form>
+
+        <table id="SalmonTable"></table>
+
+
+        
+    <!-- <h2 id='Seattle'> </h2>
     <div  id="SeattleList"></div>
     <br>
 
@@ -23,7 +48,7 @@
     
     <br>
     <h2 id='Lima'> </h2>
-    <div  id="LimaList"></div>
+    <div  id="LimaList"></div> -->
 
     </main>
 
