@@ -1,14 +1,16 @@
-
-.navli{
+*{
+  box-sizing: border-box;
+}
+header nav ul li{
     display: inline-block;
     margin-right:200px ;
     margin-left: 125px;
-   font-size: 25px;
+   font-size: 35px;
     font-family: fantasy;
     font-size:bold ;
-    border: 1px solid;
     padding:1px;
-    
+    color: #FFDEAD;
+   
     
 }
 img{
@@ -19,10 +21,12 @@ img{
 }
  h6{
         font-size: 20px;
+        font-family:sans-serif;
+  color: #C0C0C0;
 }
 
 
-.header-img{
+header img{
     background-image :url(https://sweetgirlcookies.com/wp-content/uploads/2017/09/Sweet-Girl-Cookie-Header.jpg);
     width: 100%; 
     height: 220px;
@@ -34,9 +38,12 @@ img{
 }
 
 body{
-    background-color: cyan;
-}
+    background-color:#2B6E78
+  }
 
+  table{
+    width:48%;
+  }
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -58,7 +65,7 @@ input[type=text] {
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: blueviolet
+  background-color: blueviolet;
   color: white;
   padding: 16px 32px;
   text-decoration: none;
@@ -69,4 +76,69 @@ input[type=button], input[type=submit], input[type=reset] {
 label{
   font-size: large;
   font-weight: bold;
+}
+
+article img {
+  display: inline-block;
+ margin-left: 650px;
+ 
+
+}
+
+article h3{
+  display: inline-block;
+  font-family:sans-serif;
+  color:#EEE8AA;
+  font-size: 30px;
+}
+
+section h2 {
+  font-family:sans-serif;
+  color:#EEE8AA;
+  font-size: 30px;
+}
+
+ h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:#EEE8AA;
+  font-size: 25px;
+}
+h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #191970;
+  font-size: 30px;
+  float: right;
+  margin-right:250px;
+  border: 1px solid springgreen;
+  display: inline-block;
+  background-color:white ;
+  padding:15px;
+  border-radius: 5px;
+  margin-top: -50px;
+}
+
+
+hr{
+  padding: 25px;
+  background-color:#FFA500;
+}
+
+footer h6{
+  text-align: center;
+ margin:20px
+  
+}
+
+footer p{
+  text-align: center;
+  color:#FDF5E6;
+margin-top: -20px;
+ font-family: 'Redressed', cursive; ;
+ 
+}
+footer img {
+  display:block;
+  width: 20px;
+margin-top: -32px;
+margin-inline-end: 580px;
 }
